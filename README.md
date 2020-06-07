@@ -1,3 +1,3 @@
 <p align="center">
-   <img src="./github/intro-logo.png" width="300"/>
+   <img src="./github/logo-ecoleta.png" width="300"/>
 </p>
