@@ -54,12 +54,15 @@ document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCities)
 
+    const collectItems = document.querySelector("[name=items]")
 
-    let selectedItems = [2,3]
+    let selectedItems = []
 
 
     // itens de coleta
     // pegar todos os lis
+
+
 
     const itemsToCollect= document.querySelectorAll(".items-grid li")
 
@@ -91,12 +94,17 @@ document
                 return itemIsDiferrent
             })
 
-            console.log(filteredItems)
-        }
+            selectedItems = filteredItems 
 
+        } else {
         // se não tiver selecionado, adiconar à seleção
+            selectedItems.push(itemId)
+        }
+        
 
         // atualizar o campo escondido com os itens selecionados
+
+        collectItems.value = selectedItems
 
     }
 

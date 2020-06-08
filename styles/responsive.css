@@ -1,3 +1,23 @@
+@media (max-width:320px) {
+    
+    #page-search-results main .cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body::after {
+        top:300px
+    }
+
+    #page-search-results header a {
+        font-size: 0.01px;
+    }
+
+}
+
+
 
 @media (max-width:900px) {
     #page-home {
@@ -16,15 +36,10 @@
     #page-home main {
         align-items:center;
     }
-}
 
-@media (min-width:1024px) {
-
-    #page-home {
-
-        background-position-x: 40vw;
+    #page-search-results main .cards {
+        grid-template-columns: 1fr 1fr;
     }
-
 }
 
 @media (min-width:1024px) {

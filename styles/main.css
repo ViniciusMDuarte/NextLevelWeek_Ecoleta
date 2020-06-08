@@ -2,6 +2,7 @@
     --title-font:'Ubuntu', sans-serif;
     --title-color: #322153;
     --color-primary: #36cb79;
+    --background-white-input: #f0f0f5;
 
 }
 
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 #page-home {
     height: 100vh;
     background: url('../assets/icones/home-background.svg') no-repeat;
-    background-position: 37vw 12vw;
+    background-position: 37vw 18vh;
 }
 
 .content {
