@@ -1,40 +1,40 @@
-
 {% extends "layout.html" %}
 
- 
- {% block styles %}
-    <link rel="stylesheet" href="styles/home.css"> 
+{% block styles %}
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/modal.css">
- {% endblock styles %}
-    
-    <title>Ecoleta</title>
-    
-</head>
-<body>
+{% endblock styles %}
 
-    {# id="page-home" #}
+{% block title %}
+    <title>
+        Início - Ecoleta</title>
+{% endblock title %}
+
+{% set pageId = "page-home" %}
+
 {% block content %}
- <div class="content">
+    <div class="content">
 
- {% include "partials/page-home.html" %}
+        {% include "partials/page-home.html" %}
 
-            <main>
-                <h1>Seu marketplace de coleta de resíduos</h1>
-        
-                <p>Ajudamos pessoas a encontrarem pontos de forma eficiente.</p>
-                <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
-            
+        <main>
+            <h1>Seu marketplace de coleta de resíduos</h1>
 
-            </main>
-           
-    
-        </div>
+            <p>Ajudamos pessoas a encontrarem pontos de forma eficiente.</p>
+            <a href="#">
+                <span></span>
+                <strong>Pesquisar pontos de coleta</strong>
+            </a>
+
+        </main>
+
+    </div>
 {% endblock content %}>
-       
 
-{% include "partials/modal.html" %}
+{% block modal %}
+    {% include "partials/modal.html" %}
+{% endblock modal %}
 
 {% block scripts %}
-<script src="/scripts/index.js"></script>
+    <script src="/scripts/index.js"></script>
 {% endblock scripts %}
-
